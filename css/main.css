@@ -1,5 +1,6 @@
 body{
-  background: #ccc;
+  background: #000;
+  color: white;
 }
 .img{
   width: auto;
@@ -7,6 +8,11 @@ body{
 }
 .imagen{
   width: 250px;
+  height: 350px;
+  float: none;
+}
+.imagen1{
+  width: 350px;
   height: 350px;
   float: none;
 }
