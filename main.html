@@ -8,22 +8,42 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.5.1.min.js"></script> <!-- Integrar JQuery -->
     <title>Inicio | Ksports</title>
+    <script>
+        function saludar(){
+          var tiempo = new Date();
+          var hora, cad = " Son las ";
+          with(tiempo){
+            hora = getHours();
+            cad += hora + ":" + getMinutes()+ ":" + getSeconds();
+          }
+          if (hora < 12)
+            cad = "Buenos días," + cad;
+
+          else if(hora < 18)
+          cad  = "Buenas tardes," + cad;
+
+          else
+            cad = "Buenas noches," + cad;
+
+            return cad
+        }
+    </script>
   </head>
   <body>
     <!--Integración de Navbar-->
    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff914d;">
-<a class="navbar-brand" href="#">Logo</a>
+<a class="navbar-brand" href="#"><span class="icon-star"></span><i>KSPORTS</i></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
   <li class="nav-item active">
-    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="#"><span class="icon-home"></span>Inicio<span class="sr-only">(current)</span></a>
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Conócenos
+      <span class="icon-users"></span>Conócenos
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
       <a class="dropdown-item" href="#">¿Quiénes somos?</a>
@@ -35,7 +55,7 @@
   </li>
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Deportes
+        <span class="icon-pitch"></span>Deportes
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
       <a class="dropdown-item" href="#">Fútbol</a>
@@ -63,6 +83,9 @@
 </div>
 </nav>
     <!--Termina Navbar--->
+    <marquee><div class="parte1"><!--Se hace una primera division-->
+      <h5><script>document.write(saludar());</script></h5><!--Colocamos el contenido de la página-->
+    </div> </marquee>
     <!---Empieza slider-->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
