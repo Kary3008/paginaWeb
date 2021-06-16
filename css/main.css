@@ -36,3 +36,24 @@ body{
 .linea{
   background-color: #ffbd59;
 }
+.cajas{
+  width: 100%;
+  background: transparent;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid #ffcc00;
+}
+.cajas focus{
+  border-bottom: 5px solid white;
+}
+.contacto{
+  background-color: #9933ff;
+  border: none;
+}
+.form{
+  background: #000;
+  color: #fff;
+  font-size: 1em;
+  text-align: left;
+}
