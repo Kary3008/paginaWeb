@@ -28,3 +28,11 @@ body{
   height: 50px;
   padding: 2px, 2px, 2px, 2px;
 }
+.icono{
+  width: 100px;
+  height: 100px;
+  float: none;
+}
+.linea{
+  background-color: #ffbd59;
+}
